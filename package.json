@@ -26,6 +26,10 @@
     "lint-staged": "^15.2.9"
   },
   "lint-staged": {
-    "*": "eslint"
+    "*": [
+      "eslint",
+      "prettier --check",
+      "jest"
+    ]
   }
 }
