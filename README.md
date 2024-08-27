@@ -15,6 +15,14 @@ This template is pre-configured with essential tools and settings to ensure code
 
 Follow these steps to set up the project with your own repository:
 
+0. **Clone the Repository:**
+
+   - Clone this repository to your local machine using the following command:
+
+     ```bash
+     git clone https://github.com/leonbubova/node-starter.git
+     ```
+
 1. **Rename the Folder:**
 
    - Change the project folder's name to your desired project name.
@@ -45,15 +53,21 @@ Follow these steps to set up the project with your own repository:
 6. **Add Remote:**
 
    ```bash
-   git remote add origin [YOUR USERNAME]@github.com:[YOUR USERNAME]/[YOUR REPO NAME].git
+   git remote add origin https://[YOUR USERNAME]@github.com:[YOUR USERNAME]/[YOUR REPO NAME].git
    ```
 
-7. **Initial Commit and Push:**
+7. **Install dependencies**
+
+   ```bash
+   npm i
+   ```
+
+8. **Initial Commit and Push:**
 
    ```bash
    git add .
    git commit -m "initial commit"
-   git config --global credential.helper store
+   git config --global credential.helper store // optional
    git push -u origin main
    ```
 
